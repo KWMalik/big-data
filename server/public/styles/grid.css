@@ -1,0 +1,124 @@
+
+
+.Grid {
+	border-collapse: collapse;
+	background: #fff;
+	display: -webkit-box;
+	-webkit-box-flex: 1;
+	width: 100%;
+	position: relative;
+	-webkit-box-orient: vertical;
+}
+
+.Grid th {
+	color: #333;
+	text-align: left;
+	padding: 4px;
+	font-size: 10px;
+	background: -webkit-linear-gradient(top, #dbdbdb 0%,#bbbbbb 100%);
+	border-top: solid 1px #404040;
+	border-bottom: solid 1px #555555;
+	border-right: solid 1px #a8a8a8;
+	border-left: solid 1px #e2e2e2;
+	position: relative;
+}
+
+.Grid th:hover {
+	cursor: pointer;
+}
+
+.Grid th:first-child {
+	border-left: solid 1px transparent;
+}
+
+.Grid th.Sorted {
+	border-top: solid 1px #222;
+	background: -webkit-linear-gradient(top, #bbb 0%,#888 100%);
+}
+
+.Grid th.Sorted:after {
+	-webkit-mask: url(../images/triangle.png) no-repeat scroll 0 0;
+	-webkit-mask-size: contain;
+	-webkit-transform-origin: 20% 50%;
+	background: #333;
+	position: absolute;
+	right: 5px;
+	height: 0.8em;
+	width: 0.8em;
+	top: 5px;
+	content: " ";
+	
+}
+
+.Grid th.Sorted.Descending:after {
+	-webkit-transform: rotate(270deg);
+}
+
+.Grid th.Sorted.Ascending:after {
+	-webkit-transform: rotate(90deg);
+}
+
+.Grid tbody {
+	display: -webkit-box;
+	width: 100%;
+	-webkit-box-flex: 1;
+	-webkit-box-orient: vertical;
+}
+
+ .Grid thead {
+ 	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	padding-right: 15px;
+ }
+
+
+.Grid tbody {
+	overflow: auto;
+}
+
+.Grid tbody td:last-child {
+	border-right: none !important;
+}
+
+.Grid tr {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+.Grid td, .Grid th {
+	display: block;
+	-webkit-box-flex: 1.0;
+	width: 0;
+}
+
+.Grid tbody td {
+	padding: 5px;
+	font-size: 12px;
+	color: #222;
+	border-right: solid 1px #d9d9d9;
+}
+
+
+
+.Grid tbody tr.Selected td {
+	background: #ccc !important;
+	color: #333;
+	
+	
+}
+
+.Grid tbody:focus tr.Selected td {
+	background: #4b95e5 !important;
+	border-bottom: solid 1px #7daaea;
+	font-weight: bold;
+	color: #fff;
+}
+
+.Grid tbody tr:nth-child(2n+1) td {
+	background: #fff;
+}
+
+.Grid tbody tr:nth-child(2n) td {
+	background: #f2f5f9;
+}
+

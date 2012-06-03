@@ -1,0 +1,8 @@
+{
+	"name": "big-data",
+	"version": "0.0.1",
+	"dependencies": {
+		"com.izaakschroeder.presto": ">=0.0.1",
+		"socket.io": ">=0.9.6"
+	}
+}

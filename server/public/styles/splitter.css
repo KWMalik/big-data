@@ -1,0 +1,14 @@
+.Splitter {
+	display: -webkit-box;
+	z-index: 999;
+}
+
+.Splitter.Horizontal {
+	cursor: col-resize;
+	width: 10px;
+}
+
+.Splitter.Vertical {
+	cursor: row-resize;
+	height: 10px;
+}

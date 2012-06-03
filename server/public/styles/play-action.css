@@ -1,0 +1,44 @@
+
+.PlayAction a:after{
+	font-size: 28px;
+	font-family: 'Pictos', sans-serif;
+	text-shadow: 	rgba(255,255,255,0.08) 0 1px 0;
+	
+	display: inline-block;
+	position: relative;
+
+}
+
+.PlayAction.Clicked a#play-play:after{
+	content: "\1EDE";
+}
+#play-previous:after { content: "\1E7D"; }
+#play-play:after { content: "\1EE1"; }
+#play-next:after { content: "\1EDF"; }
+
+
+
+.PlayAction {
+	display:inline-block;
+	margin:0px;
+	
+}
+
+.PlayAction a {
+	border-radius: 50%;
+	background: -webkit-linear-gradient(top,  #f4f4f4 0%,#cfcfcf 100%);
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,.3);
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	color: #737373;
+	padding: 4px;
+}
+
+.PlayAction a:active {
+	background: #666463;
+	color: #eee;
+	/*-webkit-box-shadow:inset 1px 2px 5px rgba(0,0,0,0.4);*/
+	text-shadow: none;
+}
