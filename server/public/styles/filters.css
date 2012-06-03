@@ -5,8 +5,6 @@
 	font-size: 12px;
 	border-bottom: solid 1px #c0c0c0;
 	overflow: auto;
-	
-
 }
 
 #Filters:not(.Opened) {
@@ -44,18 +42,14 @@
 
 #Filters a {
 	display: inline-block;
-	
 	padding: 4px 10px;
 	line-height: 1em;
 	text-align: center;
-	
-	
 	background: -webkit-linear-gradient(top, #f6f6f6 0%, #dedede 100%);
 }
 
 .FiltersVisibilityModifier:before {
 	background: #aaa;
-
 	background-repeat: no-repeat;
 	-webkit-mask: url(../images/triangle.png) no-repeat scroll 0 0;
 	-webkit-mask-size: contain;
@@ -67,7 +61,6 @@
 	right: 100%;
 	top: 0.7em;
 	margin-right: 3px;
-
 	-webkit-transform: rotate(90deg);
 }
 
