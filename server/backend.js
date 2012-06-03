@@ -1,6 +1,6 @@
 
 var 
-	directory = require('directory'),
+	directory = require('com.izaakschroeder.directory'),
 	path = require('path'),
 	EventEmitter = require('events').EventEmitter,
 	util = require('util');

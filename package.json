@@ -2,6 +2,7 @@
 	"name": "big-data",
 	"version": "0.0.1",
 	"dependencies": {
+		"com.izaakschroeder.directory": ">=0.0.2",
 		"com.izaakschroeder.presto": ">=0.0.3",
 		"com.izaakschroeder.presto.static-content": ">=0.0.2",
 		"socket.io": ">=0.9.6"
