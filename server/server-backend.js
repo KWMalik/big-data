@@ -1,6 +1,7 @@
 
 var 
 	directory = require('com.izaakschroeder.directory'),
+	fs = require('fs'),
 	path = require('path'),
 	EventEmitter = require('events').EventEmitter,
 	util = require('util');
@@ -11,12 +12,17 @@ function Backend() {
 	this.plugins = { };
 	this.pluginPaths = directory.resolver();
 	this.pluginPaths.discovery({ depth: 2, match: /^(.*)\/package.json$/ }).on("added", function(id, fullPath) {
-		id = path.dirname(id);
-		self.plugins[id] = { 
-			id: id,
-			path: path.dirname(fullPath)
-		};
-		self.emit("plugin.added", self.plugins[id]);
+		fs.readFile(fullPath, "utf8", function(err, data) {
+			var manifest = data ? JSON.parse(data) : undefined;
+			id = path.dirname(id);
+			self.plugins[id] = { 
+				id: id,
+				path: path.dirname(fullPath),
+				manifest: manifest
+			};
+			self.emit("plugin.added", self.plugins[id]);
+		})
+		
 	}).on("removed", function(id, fullPath) {
 		self.emit("plugin.removed", self.plugins[id])
 	})
@@ -42,6 +48,8 @@ Backend.prototype.activatePlugin = function(plugin) {
 
 	if (plugin.active)
 		return;
+
+	console.log("Activating plugin "+plugin.id+"...");
 
 	require(plugin.path);
 

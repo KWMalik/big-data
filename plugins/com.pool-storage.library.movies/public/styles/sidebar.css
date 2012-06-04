@@ -1,0 +1,4 @@
+
+a[data-library="com.pool-storage.library.movies"]:before {
+	background-image: url(/plugins/com.pool-storage.library.movies/images/movies.png);
+}

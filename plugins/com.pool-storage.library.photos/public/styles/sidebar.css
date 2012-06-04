@@ -1,0 +1,3 @@
+a[data-library="com.pool-storage.library.photos"]:before {
+	background-image: url(/plugins/com.pool-storage.library.photos/images/photos.png);
+}

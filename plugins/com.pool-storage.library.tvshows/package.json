@@ -1,0 +1,8 @@
+{
+	"name": "com.pool-storage.library.tvshows",
+	"version": "0.0.1",
+	"main": "public/scripts/tvshows.js",
+	"styles": [
+		"sidebar.css"
+	]
+}

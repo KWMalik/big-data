@@ -1,0 +1,8 @@
+{
+	"name": "com.pool-storage.library.music",
+	"main": "public/scripts/music.js",
+	"version": "0.0.1",
+	"styles": [
+		"sidebar.css"
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"name": "com.pool-storage.library.magic-the-gathering",
+	"version": "0.0.1",
+	"main": "public/scripts/mtg.js",
+	"styles": [
+		"sidebar.css"
+	]
+}

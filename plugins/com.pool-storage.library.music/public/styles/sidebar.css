@@ -1,0 +1,4 @@
+
+a[data-library="com.pool-storage.library.music"]:before {
+	background-image: url(/plugins/com.pool-storage.library.music/images/music.png);
+}

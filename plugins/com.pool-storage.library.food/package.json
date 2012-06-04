@@ -1,0 +1,8 @@
+{
+	"name": "com.pool-storage.library.food",
+	"version": "0.0.1",
+	"main": "public/scripts/food.js",
+	"styles": [
+		"sidebar.css"
+	]
+}

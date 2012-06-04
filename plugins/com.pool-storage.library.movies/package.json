@@ -1,0 +1,9 @@
+{
+	"name": "com.pool-storage.library.movies",
+	"version": "0.0.1",
+	"main": "public/scripts/movies.js",
+	"styles": [
+		"sidebar.css"
+	],
+	"icon": "images/movies.png"
+}

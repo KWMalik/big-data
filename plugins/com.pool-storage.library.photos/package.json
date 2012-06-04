@@ -1,0 +1,8 @@
+{
+	"name": "com.pool-storage.library.photos",
+	"version": "0.0.1",
+	"main": "public/scripts/photos.js",
+	"styles": [
+		"sidebar.css"
+	]
+}
